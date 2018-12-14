@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.thumbnail > .image-profile {
+  background-image: url(https://lh3.googleusercontent.com/-fVA3R6PVmXA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcbfCw3IvlSkP0B-l3tibjJJbNlP7w/s64-c-mo/photo.jpg);
+  -webkit-background-size: 32px 32px;
+  background-size: 32px 32px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin: -1px;
+  overflow: hidden;
+  position: relative;
+  height: 32px;
+  width: 32px;
+  z-index: 0;
+  vertical-align:middle;
+  margin-top: -5px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 30px;
+}
+
+.arrow i {
+  display: inline-block;
+  font-size: 30px;
+  transition: all 0.4s ease;
+  bottom: -4px;
+  position: relative;
+}
+
+.arrow.up i {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media (max-width:600px) {
+
+  .thumbnail > .caption {
+    display: none;
+  }
+
+  .thumbnail > arrow {
+    display: inline-block;
+  }
+
+}
+
+@media (min-width:600px) {
+
+  .thumbnail > .caption {
+    display: inline-block;
+  }
+
+  .thumbnail > arrow {
+    display: none;
+  }
+
+}
